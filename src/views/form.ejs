@@ -10,8 +10,12 @@
 </head>
 
 <body>
-    <form action="/auth/login" method="post">
-        <legend>Login</legend>
+    <form action="/users" method="post">
+        <legend>Cadastro de usuario</legend>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name">
+        </div>
         <div>
             <label for="login">Login</label>
             <input type="text" id="login" name="login">
@@ -20,7 +24,7 @@
             <label for="password">Senha</label>
             <input type="password" id="password" name="password">
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Cadastrar</button>
     </form>
 </body>
 
