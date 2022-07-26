@@ -1,17 +1,136 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Goldman", serif;  
 }
 
 body {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #ffff;
+    min-height:100vh;
+    padding:40px;
+    align-content: center;
+
 }
 
-form {
-    height: 100%;
-    text-align: center;
+.container-f {
+    max-width: 800px;
+    height: 500px;
+    background-color:#030303;
+    padding: 10px;
+    margin: 40px auto 0 auto;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 2, 2, 0.281);
 }
+
+.container-f .img{
+    width: 30%;
+    height: 400px;
+    text-align:center;
+    justify-content:center;
+    margin:10px;  
+    padding: 10px;
+    border-style:solid;
+    border-radius: 20px;
+    border-color:#dfded8;
+}
+
+.container-f .img p{
+    display:flex;
+    height: 100px;
+    margin: auto;
+    text-align:center;
+    color: rgb(8, 8, 8);
+    justify-content:center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight:bolder;
+    text-shadow: -1px -1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF,  1px 0px 0px #FFF;
+}
+
+.container-f .form {
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.container-f .form h1{
+    font-size: 2.3em;
+    font: bold;
+    color: rgb(8, 8, 8);
+    margin:50px;
+    text-shadow: -1px -1px 0px rgb(249, 252, 250), 1px 1px 0px rgb(51, 22, 97), 1px 2px 5px rgb(52, 114, 172), 1px 0px 0px #FFF;
+}
+
+.container-f .form form p{
+    margin-top: 15px;
+}
+
+.container-f .form form p a{
+    text-decoration: none;
+    color: rgb(243, 247, 243);
+}
+
+.container-f .form form input{
+    width: 100%;
+    display: block;
+    outline: none;
+    border-color: #FFF;
+    background-color: rgb(8, 8, 8);
+    margin: 15px 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+}
+
+.container-f .form form input:hover{
+    background-color: gainsboro;
+    color:#030303
+}
+
+.container-f .form form input:focus-visible{
+    outline: 3px solid rgb(78, 65, 196);
+}
+
+.container-f .form form input::placeholder{
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 2rem;
+    font-style: italic;
+}
+
+.container-f .form form input[type="submit"] {
+    background-color:#0a0a0a;
+    color:#fff;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+    transition: 0.5s;  
+}
+
+.container-f .form form input[type="submit"]:hover {
+    background-color: rgb(249, 250, 249);
+    color:rgb(8, 8, 8)
+}
+
+.container-f .form form p a :hover{
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    .container-f .img {
+        display: none;
+    }
+    .container-f .form{
+        width: 100%;
+    }
+}
+
+
+

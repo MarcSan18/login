@@ -22,5 +22,6 @@ app.use(session({
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 app.use('/', mainRouter);
+app.use('/home', mainRouter)
 
-app.listen(3333, () => console.log('Funcionando ✈️'));
+app.listen(3333, () => console.log('node rodando'));

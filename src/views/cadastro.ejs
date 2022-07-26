@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" href="./img/NewLogo.ico" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="img">
+
+                <img src="/img/login.png" alt="imagem de uma nuvem com uma seta subindo e outra descendo com o nome web-se">
+                <div>
+                    <p>BEM VINDO!</p>
+                    <p>Crie sua conta e tenha uma experiência incrível</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <h1>CRIAR CONTA</h1>
+                <form action="/users" method="post">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div>
+                        <label for="sexo">Sexo</label>
+                        <select name="opcoes" id="opcoes">
+                            <option disabled="disabled" selected="selected"> --Selecione a opção</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outros">Outro</option>
+                        </select>
+                    </div>
+                    <div class="data-nascimento">
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="date" id="data-nascimento" name="data-de-nascimento">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div>
+                        <label for="senha">confirme sua senha</label>
+                        <input type="password" id="password" name="password" placeholder="Confirme sua senha" required>
+                    </div>
+                    <div class="tipo-usuario">
+                        <p>Tipo de Usuário</p>
+                        <div>
+                            <input type="checkbox" id="usuario" name="usuario-cliente" value="cliente">
+                            <label for="usuario-cliente">Cliente</label>
+                            <input type="checkbox" id="usuario" name="usuario-parceiro" value="parceiro">
+                            <label for="usuario-parceiro">Parceiro</label>
+                            <input type="checkbox" id="usuario" name="usuario-estabelecimento" value="estabelecimento">
+                            <label for="usuario-estabelecimento">Vendedor</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="documento">CPF/CNPJ</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF ou CNPJ" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefone com DDD</label>
+                        <input type="tel" id="phone" nome="phone" placeholder="Digite o Telefone" required>
+                    </div>
+                        <div class="tipocontato">
+                            <p>Whatsapp?</p>
+                            <div>
+                                <input type="radio" id="sim" name="resposta" value="sim">
+                                <label for="respostaSim">Sim</label>
+
+                                <input type="radio" id="nao" name="resposta" value="nao">
+                                <label for="respostaNao">Não</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Nome da rua" required>
+                        </div>
+                        <div>
+                            <label for="numero">Nº</label>
+                            <input type="text" id="numero" name="numero" placeholder="Digite o número" required>
+                        </div>
+                        <div>
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" name="complemento"placeholder="Ex: bloco, apto, casa1, 2, 3..." required>
+                        </div>
+                        <div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro" required>
+                        </div>  
+                        <div>
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" nome="cep" placeholder="Digite o CEP" required>
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade" required>
+                        </div>
+                        <div>
+                            <label for="uf">Estado</label>
+                            <select name="opcoes" id="opcoes">
+                                <option disabled="disabled" selected="selected"> --Selecione o estado</option>
+                                <option value="acre">AC - Acre</option>
+                                <option value="alagoas">AL - Alagoas</option>
+                                <option value="amapa">AP - Amapá</option>
+                                <option value="amazonas">AM - Amazonas</option>
+                                <option value="bahia">BA - Bahia</option>
+                                <option value="ceara">CE - Ceará</option>
+                                <option value="distrito=federal">DF - Distrito Federal</option>
+                                <option value="espirito-santo">ES - Espirito Santo</option>
+                                <option value="goias">GO - Goiás</option>
+                                <option value="maranhao">MA - Maranhão</option>
+                                <option value="mato-grosso">MT - Mato Grosso</option>
+                                <option value="mato-grosso-do-sul">MS - Mato Grosso do Sul</option>
+                                <option value="minas-gerais">MG - Minas Gerais</option>
+                                <option value="para">PA - Pará</option>
+                                <option value="paraiba">PB - Paraíba</option>
+                                <option value="parana">PR - Paraná</option>
+                                <option value="pernambuco">PE - Pernambuco</option>
+                                <option value="piaui">PI - Piauí</option>
+                                <option value="rio-de-janeiro">RJ - Rio de Janeiro</option>
+                                <option value="rio-grande-do-norte">RN - Rio Grande do Norte</option>
+                                <option value="rio-grande-do-sul">RS - Rio Grande do Sul</option>
+                                <option value="rondonia">RO - Rondônia</option>
+                                <option value="roraima">RR - Roraima</option>
+                                <option value="santa-catarina">SC - Santa Catarina</option>
+                                <option value="sao-paulo">SP - São Paulo</option>
+                                <option value="sergipe">SE - Sergipe</option>
+                                <option value="tocantins">TO - Tocantins</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" >CADASTRAR</button>
+                        </div>
+                        <div>
+                            <a href="/home">Voltar</a>
+                        </div>
+
+                </form>
+            </div>
+    </main>
+
+
+</body>
+
+</html>

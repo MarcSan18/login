@@ -3,12 +3,11 @@ const path = require('path');
 const { v4: uuid } = require('uuid');
 const bcrypt = require('bcryptjs');
 
-const userPath = path
-    .join(__dirname, '..', 'database', 'users.json');
+const userPath = path.join(__dirname, '..', 'database', 'users.json');
 
 const usersController = {
     getCreateScreen: (request, response) => {
-        return response.render('form');
+        return response.render('cadastro');
     },
     create: (request, response) => {
         const { password } = request.body;
@@ -17,7 +16,7 @@ const usersController = {
 
         const newUser = {
             id: uuid(),
-            ...request.body,
+            ...request.body, 
             password: passwordHash
         }
 

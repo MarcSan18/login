@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="./img/NewLogo.ico" type="image/x-icon">
+    <title>login</title>
 </head>
 
 <body>
-    <form action="/auth/login" method="post">
-        <legend>Login</legend>
-        <div>
-            <label for="login">Login</label>
-            <input type="text" id="login" name="login">
+
+    <div class="container-f">
+        <div class="img">
+            <img src="/img/login.png" alt="desenho de uma numem em preto e roxo com uma seta para cima e outsra para baixo e escrito web-se logo abaixo de desenho">
+
+            <div>
+                <p>BEM VINDO!</p>
+                <p>Faça seu login e aproveite as ofertas!</p>
+            </div>
         </div>
-        <div>
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password">
+
+        <div class="form">
+            <h1>Entrar</h1>
+
+            <form action="/auth/login" method="post">
+                <div>
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <div>
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+                <div>
+                    <p><a href="#">Esqueceu sua senha?</a></p>
+                </div>
+
+                <div>
+                    <input type="submit" value="Entrar">
+                </div>
+
+                <div>
+                    <p>Ainda não é cadastrado?
+                        <a href="/user/register">CRIAR CONTA</a>
+                    </p>
+                </div>
+
+                <div>
+                    <a href="/home">Voltar</a>
+                </div>
+            </form>
         </div>
-        <button type="submit">Login</button>
-    </form>
+
+
 </body>
 
 </html>

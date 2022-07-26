@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Goldman", serif;
+}
+
+body {
+    padding: 0px;
+    background-color: #ffff;
+    min-height: 100vh;
+    align-content: center;
+}
+div {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1440px;
+    height: auto;
+    background-color: black;
+    padding: 10px;
+    margin: 10px auto auto;
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 2, 2, 0.281);
+}
+
+.container .img {
+    border-style:ridge;
+    display: block;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 40px;
+    background-color: black;
+    border-radius: 30px;
+
+}
+
+.container .img p {
+    display: flex;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-shadow: -1px -1px 0px rgb(249, 252, 250), 1px 1px 0px rgb(51, 22, 97), 1px 2px 5px rgb(52, 114, 172), 1px 0px 0px #FFF;
+}
+
+.container form {
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container .form h1 {
+    padding: 5px;
+    border-radius: 30px;
+    border-style:ridge;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    font: bold;
+    margin: 10px;
+    text-shadow: -1px -1px 0px rgb(249, 252, 250), 1px 1px 0px rgb(51, 22, 97), 1px 2px 5px rgb(52, 114, 172), 1px 0px 0px #FFF;
+}
+
+.container .form p {
+    margin-top: 5px;
+    padding: 10px;
+    color: white
+}
+
+.container .form label {
+    display: flex;
+    font-size: 13px;
+    line-height: 12px;
+    color: white
+}
+
+.container .form input {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:black;
+    margin-bottom: 10px;
+    margin: 10px 10px;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+
+.container .form select {
+    display: block;
+    margin: 10px 10px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    background-color: black;
+    text-align: justify;
+    border-style:ridge;
+    font-size: 13px;
+    color: white;
+    border-radius: 30px;
+}
+
+.dataNascimento {
+    display: block;
+    background-color: black;
+    width: 70%;
+    font-size: 12px;
+
+}
+
+
+.container .form input:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.container .form form input:focus-visible {
+    outline: 3px solid black;
+}
+
+.container .form form input::placeholder {
+    color: black;
+    text-align: left;
+    font-size: 13px;
+    font-style: italic;
+    padding: 5px;
+}
+
+button {
+    background-color:black;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    transition: 0.9s;
+    border-radius: 30px;
+    border-color: #fff;
+}
+
+
+button [type="submit"]:hover {
+background-color: green;
+}
+
+
+.container .form a {
+    width: 300px;
+    margin: auto auto;
+    margin-left: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+}
+
+@media (max-width:820px) {
+    .container .img {
+        display: none;
+    }
+
+    .container .form {
+        width: 100%;
+    }
+}
