@@ -10,13 +10,14 @@ const usersController = {
         return response.render('cadastro');
     },
     create: (request, response) => {
-        const { password } = request.body;
+        const { password, confirmpassword } = request.body;
 
+        console.log(password)
         const passwordHash = bcrypt.hashSync(password);
 
         const newUser = {
             id: uuid(),
-            ...request.body, 
+           // ...request.body, 
             password: passwordHash
         }
 

@@ -13,8 +13,12 @@ body {
     min-height: 100vh;
     align-content: center;
 }
-div {
-    display: inline-block;
+
+
+.tipo-usuario {
+    position: relative;
+
+
 }
 
 .container {
@@ -140,35 +144,31 @@ div {
     padding: 5px;
 }
 
-button {
+button {  
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 80px;
+    padding: 5px;
     background-color:black;
     color: #fff;
-    cursor: pointer;
-    padding: 10px;;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    transition: 0.9s;
     border-radius: 30px;
     border-color: #fff;
+    cursor:pointer;
+    transition: 0.5s;
 }
 
-
-button [type="submit"]:hover {
-background-color: green;
-}
 
 
 .container .form a {
-    width: 300px;
-    margin: auto auto;
-    margin-left: 10px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
     padding: 5px;
-    text-transform: uppercase;
+    text-align: right;
     color: white;
-    text-align: center;
-    align-self: flex-end;
+    text-transform: uppercase;
 }
+
 
 @media (max-width:820px) {
     .container .img {

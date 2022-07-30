@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,6 @@
                     <p>Crie sua conta e tenha uma experiência incrível</p>
                 </div>
             </div>
-
             <div class="form">
                 <h1>CRIAR CONTA</h1>
                 <form action="/users" method="post">
@@ -61,12 +60,12 @@
                     <div class="tipo-usuario">
                         <p>Tipo de Usuário</p>
                         <div>
-                            <input type="checkbox" id="usuario" name="usuario-cliente" value="cliente">
                             <label for="usuario-cliente">Cliente</label>
-                            <input type="checkbox" id="usuario" name="usuario-parceiro" value="parceiro">
+                            <input type="checkbox" id="usuario" name="usuario-cliente" value="cliente">
                             <label for="usuario-parceiro">Parceiro</label>
-                            <input type="checkbox" id="usuario" name="usuario-estabelecimento" value="estabelecimento">
+                            <input type="checkbox" id="usuario" name="usuario-parceiro" value="parceiro">
                             <label for="usuario-estabelecimento">Vendedor</label>
+                            <input type="checkbox" id="usuario" name="usuario-estabelecimento" value="estabelecimento">    
                         </div>
                     </div>
                     <div>
@@ -77,14 +76,14 @@
                         <label for="phone">Telefone com DDD</label>
                         <input type="tel" id="phone" nome="phone" placeholder="Digite o Telefone" required>
                     </div>
-                        <div class="tipocontato">
+                        <div class="tipo-contato">
                             <p>Whatsapp?</p>
                             <div>
-                                <input type="radio" id="sim" name="resposta" value="sim">
                                 <label for="respostaSim">Sim</label>
-
-                                <input type="radio" id="nao" name="resposta" value="nao">
+                                <input type="radio" id="sim" name="resposta" value="sim">
                                 <label for="respostaNao">Não</label>
+                                <input type="radio" id="nao" name="resposta" value="nao">
+                                
                             </div>
                         </div>
 
@@ -98,7 +97,7 @@
                         </div>
                         <div>
                             <label for="complemento">Complemento</label>
-                            <input type="text" id="complemento" name="complemento"placeholder="Ex: bloco, apto, casa1, 2, 3..." required>
+                            <input type="text" id="complemento" name="complemento"placeholder="Ex: bloco, apto, casa1, 2, 3...">
                         </div>
                         <div>
                             <label for="bairro">Bairro</label>
@@ -146,12 +145,12 @@
                             </select>
                         </div>
                         <div>
-                            <button type="submit" >CADASTRAR</button>
+                            <button type="submit">CADASTRAR</button>
                         </div>
+                    
                         <div>
-                            <a href="/home">Voltar</a>
+                            <a href="/">Voltar</a>
                         </div>
-
                 </form>
             </div>
     </main>

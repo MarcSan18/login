@@ -72,8 +72,8 @@ body {
 }
 
 .container-f .form form p a{
-    text-decoration: none;
     color: rgb(243, 247, 243);
+    text-align: center;
 }
 
 .container-f .form form input{
