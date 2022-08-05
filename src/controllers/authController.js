@@ -28,8 +28,9 @@ const authController = {
 
         request.session.idUser = userFound.id
         request.session.isAuthorized = true
+        request.session.usertype = userFound["usuario-cliente"]
 
-        return response.redirect('/home');
+        return response.redirect('home');
     }
 }
 

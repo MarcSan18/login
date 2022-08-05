@@ -1,6 +1,6 @@
 const mainController = {
     index: (request, response) => {
-        return response.redirect('/auth');
+        return response.redirect('auth');
     },
     home: (request, response) => {
         console.log(request.session);

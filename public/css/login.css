@@ -145,6 +145,7 @@ body {
 }
 
 button {  
+    display: flex;
     position: absolute;
     margin-top: 5px;
     margin-left: 80px;
@@ -160,6 +161,7 @@ button {
 
 
 .container .form a {
+    display: flex;
     position: absolute;
     margin-top: 50px;
     margin-left: 100px;
